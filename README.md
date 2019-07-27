@@ -21,19 +21,6 @@ The first key to generate is the master key. It will be used for certification o
 
 **Important** The master key should be kept offline at all times and only accessed to revoke or issue new sub-keys. Keys can also be generated on the YubiKey itself to ensure no other copies exist.
 
-You'll be prompted to enter and verify a passphrase - keep it handy as you'll need it multiple times later.
-
-To generate a strong passphrase which could be written down in a hidden or secure place; or memorized:
-
-```console
-$ gpg --gen-random -a 0 24
-ydOmByxmDe63u7gqx2XI9eDgpvJwibNH
-```
-
-On Linux or OpenBSD, select the password with the mouse to copy it to the clipboard and paste using the middle mouse button or `Shift`-`Insert`.
-
-Generate a new key with GPG, selecting `(8) RSA (set your own capabilities)`, `Certify` capability only and `4096` bit key size.
-
 Do not set the master key to expire - see [Note #3](#notes).
 
 ```console
