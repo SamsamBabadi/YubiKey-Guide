@@ -5,6 +5,10 @@ This is a guide to using [YubiKey](https://www.yubico.com/products/yubikey-hardw
 
 Keys stored on YubiKey are non-exportable (as opposed to file-based keys that are stored on disk) and are convenient for everyday use. Instead of having to remember and enter passphrases to unlock SSH/GPG keys, YubiKey needs only a physical touch after being unlocked with a PIN code. All signing and encryption operations happen on the card, rather than in OS memory.
 
+# Resetting your Yubikey
+
+https://support.yubico.com/support/solutions/articles/15000006421-resetting-the-openpgp-applet-on-the-yubikey
+
 # Creating keys
 
 Create a temporary directory which will be cleared on [reboot](https://en.wikipedia.org/wiki/Tmpfs):
