@@ -605,6 +605,11 @@ pinentry-program /usr/bin/pinentry-curses
 
 On macOS, use `brew install pinentry-mac` and adjust the program path to suit.
 
+uncomment this line:
+```
+pinentry-program /usr/local/bin/pinentry-mac
+```
+
 ## Replace agents
 
 To launch `gpg-agent` for use by SSH, use the `gpg-connect-agent /bye` or `gpgconf --launch gpg-agent` commands.
